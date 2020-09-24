@@ -13,3 +13,10 @@ playBtn.addEventListener('click', function() {
 video.addEventListener('pause', function() {
     playBtn.classList.remove('hidden')
 })
+
+const menuBtn = document.querySelector('.m-menu--container')
+const menu = document.querySelector('.header__nav--list')
+
+menuBtn.addEventListener('click', function() {
+    menu.classList.toggle('menu-active')
+})
