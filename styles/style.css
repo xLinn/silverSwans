@@ -136,6 +136,7 @@ ul {
     font-weight: 400;
     color: #fff;
     margin-top: -35px;
+    text-align: center;
 }
 .header__main__text {
     font-family: 'Louis George Cafe', sans-serif;
@@ -395,6 +396,7 @@ ul {
     justify-content: center;
 }
 .video {
+    width: 100%;
     outline: none;
     max-width: 940px;
     max-height: 525px;
@@ -819,8 +821,15 @@ ul {
         display: flex;
         justify-content: center;
     }
+    .header__nav--list li {
+        padding-right: 40px;
+    }
     .header__sn--links {
         display: none;
+    }
+    .about__me__img {
+        width: 80%;
+        margin: 0 35px 0 10px;
     }
     .portfolio__content {
         height: auto;
@@ -834,7 +843,10 @@ ul {
         padding: 10px;
     }
     .portfolio__slider {
-        margin-bottom: 15px;
+        display: none;
+    }
+    .portfolio__text {
+        text-align: center;
     }
     .video__content__other {
         width: 95%;
@@ -847,11 +859,26 @@ ul {
         display: flex;
         justify-content: center;
     }
+    .testimonials__list__text--name {
+        text-align: center;
+    }
+    .testimonials__list__text--main {
+        font-size: 14px;
+    }
     .testimonials__list li {
         width: 95%;
     }
     .testimonials__list--container {
         width: 95%;
+    }
+    .contact__subtitle:after {
+        width: 100%;
+    }
+    .contact__img {
+        display: none;
+    }
+    .footer__nav--list li {
+        padding-right: 20px;    
     }
 }
 @media (max-width: 768px) {
@@ -876,11 +903,29 @@ ul {
     .video__content__other:after {
         width: 100%;
     }
+    .testimonials__list--container {
+        margin: 0;
+    }
+    .testimonials__list {
+        justify-content: space-evenly;
+    }
+    .testimonials__list li {
+        margin: 0;
+    }
+    .testimonials__list li:nth-child(2) {
+        margin: 0;
+    } 
     .testimonials__list li:nth-child(3){
         display: none;
     }
     .footer__nav--list li {
-        padding-right: 20px;
+        padding-right: 15px;
+    }
+    .footer__nav--list li:last-child {
+        padding-right: 0;
+    }
+    #playButton {
+        display: none;
     }
 }
 @media (max-width: 425px) {
@@ -1059,6 +1104,9 @@ ul {
     .video__content__other__list--text {
         font-size: 16px;
     }
+    #playButton {
+        display: none;
+    }
     
     /* Testimonials */
     
@@ -1120,6 +1168,7 @@ ul {
     }
     .submit__button {
         max-width: 345px;
+        margin-bottom: 15px;
     }
     .contact__img {
         margin: 0;
@@ -1160,6 +1209,9 @@ ul {
     .video__content__other__list li:nth-child(2) {
         padding: 0;
     }
+    #playButton {
+        display: none;
+    }
 }
 @media (max-width: 320px) {
     .header__main__text {
@@ -1183,10 +1235,13 @@ ul {
         margin-left: 10px;
     }
     .testimonials__title {
-        font-size: 55px;
+        font-size: 50px;
     }
     .video__text {
         font-size: 12px;
+    }
+    #playButton {
+        display: none;
     }
     .submit__button {
         width: 95%;
