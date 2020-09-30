@@ -71,10 +71,18 @@
                 magna aliqua. Ut enim ad minim veniam, quis nostrud 
                 exercitation ullamcolaboris nisi ut aliquip ex ea commodo 
                 consequat. Duis aute irure</p>
-                <div class="about__me--button">
+                <div class="about__me--button modalButton">
                     <p class="about__me--button--text">get to know me better</p>
                 </div>
-            </div> 
+                <div class="about__me__modal modal">
+                    <div class="about__me__modal--container">
+                        <span class="about__me__modal--close modalClose">&times;</span>
+                        <p class="about__me__modal--container--title">Cassandra Aleksandra</p>
+                        <p class="about__me__modal--container--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem laboriosam, suscipit inventore minima, fugiat reiciendis qui animi nemo vitae at, consequatur ratione nihil voluptates illo commodi dolorem soluta maxime facilis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem laboriosam, suscipit inventore minima, fugiat reiciendis qui animi nemo vitae at, consequatur ratione nihil voluptates illo commodi dolorem soluta maxime facilis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem laboriosam, suscipit inventore minima, fugiat reiciendis qui animi nemo vitae at, consequatur ratione nihil voluptates illo commodi dolorem soluta maxime facilis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem laboriosam, suscipit inventore minima, fugiat reiciendis qui animi nemo vitae at, consequatur ratione nihil voluptates illo commodi dolorem soluta maxime facilis.</p>
+                        <img src="img/about.png" alt="my photo" class="about__me__modal__img img">
+                    </div>
+                </div>
+            </div>
         </div>
 
             <!-- Portfolio -->
@@ -84,8 +92,22 @@
                 <h1 class="portfolio__title">Portfolio</h1>
                 <h2 class="portfolio__subtitle">The Best of 2020</h2>
                 <p class="portfolio__text">After wedding, Engagement, Love Story, Wedding</p>
-                <div class="portfolio__button">
+                <div class="portfolio__button modalButton">
                     <p class="portfolio__button--text">more photos</p>
+                </div>
+                <div class="portfolio__modal modal">
+                    <div class="portfolio__modal--container">
+                        <span class="portfolio__modal--close modalClose">&times;</span>
+                        <div class="portfolio__content--grid">
+                            <img src="img/photo1.jpg" alt="photo" class="grid--content photo1 img">
+                            <img src="img/photo2.jpg" alt="photo" class="grid--content photo2 img">
+                            <img src="img/photo3.jpg" alt="photo" class="grid--content photo3 img">
+                            <img src="img/photo4.jpg" alt="photo" class="grid--content photo4 img">
+                            <img src="img/photo5.jpg" alt="photo" class="grid--content photo5 img">
+                            <img src="img/photo6.jpg" alt="photo" class="grid--content photo6 img">
+                            <img src="img/photo7.jpg" alt="photo" class="grid--content photo7 img">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="portfolio__content">
@@ -149,6 +171,13 @@
                                 consectetur adipisicing</p>
                         </li>
                     </ul>
+                    <div class="video__modal">
+                        <div class="video__modal__container">
+                            <span class="video__modal--close modalClose">&times;</span>
+                            <video controls class="modal__video" src="#" poster="img/videoPoster.jpg" preload="auto" width="940" height="525"></video>
+                            <p class="modal__video--text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eius consequatur illum deleniti placeat optio error iusto ullam impedit molestias totam sed sunt repellendus iste libero quis magni accusamus. Corrupti.</p>
+                        </div>
+                    </div>
                     <div class="video__button">
                         <p class="video__button--text">more videos</p>
                     </div>
@@ -205,6 +234,56 @@
                     </div>
                 </li>
             </ul>
+            <div class="testimonials__modal">
+                <div class="testimonials__modal__container">
+                    <span class="testimonials__modal--close modalClose">&times;</span>
+                    <ul class="testimonials__list testimonials__modal__list">
+                        <li>
+                            <div class="testimonials__list--container">
+                                <img class='testimonials__list--img img' src="img/testPhoto1.png" alt="">
+                                <p class="testimonials__list__text--name">Cassandra & Andreas</p>
+                                <p class="testimonials__list__text--main">Lorem ipsum dolor sit amet,<br>
+                                    consectetur adipisicing elit,<br>
+                                    sed do eiusmod tempor<br>
+                                    incididunt ut labore et<br>
+                                    dolore magna aliqua. Ut<br>
+                                    enim ad minim veniam, quis<br>
+                                    nostrud exercitation ullamco<br>
+                                    laboris nisi ut aliquip ex ea</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="testimonials__list--container">
+                                <img class='testimonials__list--img img' src="img/testPhoto2.png" alt="">
+                                <p class="testimonials__list__text--name">Aleksandra & Max</p>
+                                <p class="testimonials__list__text--main">Lorem ipsum dolor sit amet,<br>
+                                    consectetur adipisicing elit,<br>
+                                    sed do eiusmod tempor<br>
+                                    incididunt ut labore et<br>
+                                    dolore magna aliqua. Ut<br>
+                                    enim ad minim veniam, quis<br>
+                                    nostrud exercitation ullamco<br>
+                                    laboris nisi ut aliquip ex ea</p>
+                            </div>
+                        </li>
+                        <li>    
+                            <div class="testimonials__list--container">
+                                <img class='testimonials__list--img img' src="img/testPhoto3.png" alt="">
+                                <p class="testimonials__list__text--name">Angela & Jack</p>
+                                <p class="testimonials__list__text--main">Lorem ipsum dolor sit amet,<br>
+                                    consectetur adipisicing elit,<br>
+                                    sed do eiusmod tempor<br>
+                                    incididunt ut labore et<br>
+                                    dolore magna aliqua. Ut<br>
+                                    enim ad minim veniam, quis<br>
+                                    nostrud exercitation ullamco<br>
+                                    laboris nisi ut aliquip ex ea</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="testimonials__modal--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, itaque? Aliquid laboriosam qui adipisci facilis tempora numquam vel porro provident accusamus a? Autem impedit aut tempora natus, tenetur iure sed!</p>
+                </div>
+            </div>
             <div class="testimonials__button">
                 <p class="testimonials__button--text">read more</p>
             </div>

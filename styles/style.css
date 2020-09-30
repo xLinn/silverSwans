@@ -222,6 +222,46 @@ ul {
 .about__me--button--text {
     padding: 10px 15px;
 }
+.about__me__modal {
+    display: none;
+    position: fixed;
+    overflow: auto;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+.about__me__modal--container {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #000;
+    width: 80%;
+    height: auto;
+}
+.about__me__modal--container--title {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+}
+.about__me__modal--container--text {
+    font-size: 30px;
+    text-align: center;
+}
+.about__me__modal--close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+}
+.about__me__modal__img {
+    margin-top: 20px;
+}
 
     /* Portfolio */
 
@@ -282,6 +322,32 @@ ul {
 }   
 .portfolio__button--text {
     padding: 10px 30px;
+}
+.portfolio__modal {
+    display: none;
+    position: fixed;
+    overflow: auto;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+.portfolio__modal--container {
+    background-color: #fefefe;
+    margin: 2% auto;
+    padding: 20px;
+    border: 1px solid #000;
+    width: 80%;
+    height: auto;
+}
+.portfolio__modal--close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
 }
 
     /* Portfolio Content */
@@ -400,6 +466,39 @@ ul {
     outline: none;
     max-width: 940px;
     max-height: 525px;
+}
+.video__modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0; 
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+}
+.video__modal__container {
+    width: 80%;
+    height: auto;
+    padding: 15px;
+    margin: 10% auto;
+    border: 1px solid #000;
+    background-color: #fefefe;
+}
+.video__modal--close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+}
+.modal__video {
+    margin-left: 20%;
+}
+.modal__video--text {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
 }
 .hidden {
     opacity: 0;
@@ -560,6 +659,40 @@ ul {
     color: #000;
     text-align: center;
     margin-top: 35px;
+}
+.testimonials__modal {
+    display: none;
+    position: fixed;
+    overflow: auto;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+}
+.testimonials__modal__container {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    margin: 15% auto;
+    background-color: #fefefe;
+}
+.testimonials__modal__list {
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.testimonials__modal--text {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+.testimonials__modal--close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
 }
 .testimonials__button {
     margin-top: 40px;
